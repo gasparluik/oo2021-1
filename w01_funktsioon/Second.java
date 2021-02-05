@@ -1,5 +1,5 @@
 public class Second {
-    public static void main(String[] args) {
+    public static void Main(String[] args){
         System.out.println(myname());
         System.out.println(add(5, 6));
 
@@ -10,10 +10,7 @@ public class Second {
 
         System.out.println(fullName("Gaspar", "Luik"));
         System.out.println(checkEqual(2, 6));
-        System.out.println()
-
-
-
+        System.out.println(myLogical());
     }
     public static String myName(){
         return "Gaspar";
@@ -35,14 +32,14 @@ public class Second {
     }
 
     public static void myMath(){
-        System.out.println(Math.pow(5, 4);
+        System.out.println(Math.pow(5, 4));
         
-        int number = (int)ˇMath.pow(5, 2) // casting
+        int number = (int) Math.pow(5, 4); // casting
         System.out.println(number);
 
     }
 
-    public stativ void myLogical(){
+    public static void myLogical(){
         System.out.println(5 < 10 & 5 > 4 );
         System.out.println(6 < 8 , 3 == 3);
     }
@@ -57,8 +54,6 @@ public class Second {
         String newName2 = new String("Raimo");
 
         System.out.println(newName1 == newName2);
-
-        
     }
 }
 
