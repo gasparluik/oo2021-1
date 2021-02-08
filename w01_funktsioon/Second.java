@@ -1,5 +1,5 @@
-public class Second {
-    public static void Main(String[] args){
+public class Second{
+    public static void main(String[] args){
         System.out.println(myname());
         System.out.println(add(5, 6));
 
