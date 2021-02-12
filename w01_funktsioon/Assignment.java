@@ -2,22 +2,29 @@ import java.util.Scanner;
 
 public class Assignment{
     public static void main(String[] args){
-        //Püstitan küsimuse 
         String answer = "Ei";
-        System.out.println("Kas päevas on piisavalt tunde?");
+        System.out.println("Kas päevas on piisavalt tunde? (Jah, Ei)");
 
-        //aktiveerin scanneri, mis scannib tähemärke??
-        Scanner scanner = new Scanner(System.in);
-        //nextLine() loeb järgnevat inputi(scanner)
-        String input = scanner.nextLine();
+        System.out.println(scannerSet);
+        System.out.println(ifElse);
 
-        //Klassikaline if else statement
+    }
+
+
+    String answer = "Ei";
+    
+    public static void scannerSet(){
+        Scanner scanner = new Scanner(System.in);  //aktiveerin scanneri, mis scannib tähemärke??
+        String input = scanner.nextLine();  //nextLine() loeb järgnevat inputi(scanner
+    }
+    public static void ifElse(){
+
         if (answer.toLowerCase().equals(input.toLowerCase())){  // toLowerCase() annab kasutajale veidi eksimisruumi (Ei või ei, pole vahet)
             System.out.println("Väga õige, nii palju on ju teha");
         } else {
             System.out.println("Ei nõustu, aga palun põhjenda enda otsust");
-            // Teen uue scanneri ja inputi
-            Scanner explanation = new Scanner(System.in);
+            
+            Scanner explanation = new Scanner(System.in); // Teen uue scanneri ja inputi
             String input2 = explanation.nextLine();
             System.out.println("If you say so....");
             
