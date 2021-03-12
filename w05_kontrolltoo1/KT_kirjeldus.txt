@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+Algarvud
+* Teata, kas kasutaja sisestatud arv jagub kahe, kolme viie või seitsmega.
+* Teata, kas kasutaja sisestatud arv on algarv. 
+* Koosta massiiv esimese tuhande algarvuga. Leia selle sõela abil, millised on kümme suurimat algarvu, mis on väiksemad, kui tuhandenda algarvu ruut.
+=======
+Algarvud
+>>>>>>> 085189c003a836790567aad706ca30e9435d8481

@@ -5,45 +5,38 @@ public class Massiiv {
     public static void main(String[] args) throws IOException {
 
         ArrayList<Integer> listNumbers = new ArrayList<Integer>();
-        ArrayList<Integer> sqrtNumbers = new ArrayList<Integer>();
 
-        listNumbers.clear();
-        checkPrime(1000, listNumbers);
+
+        makeList(1000, listNumbers); // genereerib listi ainult algarvudest
+
         System.out.println("Value: " + closestValue(45, listNumbers));
-        System.out.println("Listi suurus on: " + listNumbers.size());
-        System.out.println("Listi sisu: " + listNumbers);
 
-/*         System.out.println(listNumbers.size());
-        for(int ints : listNumbers) {
-            System.out.println(ints);
-        } */
+        System.out.println("Listi suurus on: " + listNumbers.size());
+
+        System.out.println("Listi sisu: " + listNumbers);
 
 
 
     }
     //kontrolli kas number on algarv ja lisa listi
-    public static void checkPrime (int size, ArrayList<Integer> thisList){
-        int n = 0;
+    public static int makeList (int size, ArrayList<Integer> thisList){
+        boolean flag = false; 
+        int n = 2;
         
-
-        while (thisList.size() < size){// size on tahetud listi suurus
-            double m = (double)n / (double)2;
-            int flag = 0;
-            
-            if(n==0||n==1){
-                flag = 1;    
-            } else {
-                for(int i=1;i<=m;i++) {
-                    flag = 0;
-                    if(n%i==0){
-                        flag = 1;        
-                    } else if(flag==0){ 
-                        thisList.add(n);
-                    }
+        while (thisList.size() < size) {// size on tahetud listi suurus
+            for (int i = 2; i <= n / 2; ++i) {
+                if (n % i == 0) {
+                  flag = true;
+                  break;
                 }
-            }//end of else
-            n++;
+                if(!flag){
+                    thisList.add(n);
+                }
+                n++;
+            }
+            
         }//end of while
+        return n;
     }
         
 
