@@ -1,46 +1,51 @@
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Massiiv {
     public static void main(String[] args) throws IOException {
 
         ArrayList<Integer> listNumbers = new ArrayList<Integer>();
-
-
+        
+        System.out.println("Listi suurus on: " + listNumbers.size());
+        System.out.println("Listi sisu: " + listNumbers);
         makeList(1000, listNumbers); // genereerib listi ainult algarvudest
 
-        System.out.println("Value: " + closestValue(45, listNumbers));
 
-        System.out.println("Listi suurus on: " + listNumbers.size());
 
-        System.out.println("Listi sisu: " + listNumbers);
+
+
+
+
+        int number = 1000;
+        int calc = number* number;
 
 
 
     }
     //kontrolli kas number on algarv ja lisa listi
-    public static int makeList (int size, ArrayList<Integer> thisList){
+    public static void makeList (int size, ArrayList<Integer> thisList){
         boolean flag = false; 
         int n = 2;
-        
-        while (thisList.size() < size) {// size on tahetud listi suurus
-            for (int i = 2; i <= n / 2; ++i) {
+
+        while (thisList.size() <= size){// size on tahetud listi suurus
+            for (int i = 2; i <= n / 2; ++i){
                 if (n % i == 0) {
-                  flag = true;
-                  break;
+                flag = true;
+                break;
                 }
                 if(!flag){
                     thisList.add(n);
                 }
-                n++;
+                ++n;
             }
             
         }//end of while
-        return n;
     }
+}
         
 
-    //Leia lähim väärtus suurima arvu ruutjuurele
+/*     //Leia lähim väärtus suurima arvu ruutjuurele
     public static int closestValue (int of, ArrayList<Integer> in) {
         int min = Integer.MAX_VALUE;
         int closest = of;
@@ -55,7 +60,7 @@ public class Massiiv {
         }
         return closest;
     }
-}
+} */
         
 
 
