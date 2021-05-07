@@ -1,26 +1,26 @@
+import java.util.Scanner;
 
 public class Chords {
 
     public static void main(String[] args){
-        ConvertTone();
-    }
+        System.out.println("Sisesta põhitoon: ");
+        Scanner input = new Scanner(System.in);
+        int mainTone = input.nextInt();
+        int terts = mainTone + 4;
+        int kvint = mainTone + 7;
 
-    public class Chord{
-        int tone;
-        char letter;
-        int add7;
-        int add4;
+        if (mainTone = 50){
+            CTone ctone = new CTone(mainTone, terts, kvint);
+            ctone.showTone();
+            ctone.showTerts();
+            ctone.showKvint();
+        } else if(mainTone = 60){
+            FTone ftone = new FTone(mainTone, terts, kvint);
+            ftone.showTone();
+            ftone.showTerts();
+            ftone.showKvint();
+        }
 
-    }
 
-    public ConvertTone(){
-        System.out.println("Sisesta põhitoon, mida tahad konverteerida: ");
-
-        Scanner input = new Scanner();
-        int add7 = input + 7;
-        int add4 = input + 4;
-        System.out.println("Sisestatud põhitoon:" + input +"\n" + "Terts: "+ add4 +  "\n" + "Kvint: " + add7);
-
-        
     }
 }
