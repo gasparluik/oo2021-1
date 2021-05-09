@@ -1,7 +1,7 @@
 
 public class FTone extends Tones{
-    public FTone(int mainTone, int kvint, int terts){
-        super(mainTone, kvint, terts);
+    public FTone(int mainTone, int terts, int kvint){
+        super(mainTone, terts, kvint);
 
     }
     @Override    

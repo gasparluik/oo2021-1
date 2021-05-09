@@ -8,7 +8,7 @@ public abstract class Tones {
     public Tones (int mainTone, int kvint, int terts){
         this.kvint = kvint;
         this.terts = terts;
-        this. mainTone = terts;
+        this. mainTone = mainTone;
     }
 
     public void showTone(){

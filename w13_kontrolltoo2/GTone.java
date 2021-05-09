@@ -1,7 +1,7 @@
 
 public class GTone extends Tones{
-    public GTone(int mainTone, int kvint, int terts){
-        super(mainTone, kvint, terts);
+    public GTone(int mainTone, int terts, int kvint){
+        super(mainTone, terts, kvint);
 
     }
     @Override    
