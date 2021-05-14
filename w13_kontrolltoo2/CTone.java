@@ -11,11 +11,11 @@ public class CTone extends Tones{
     }
     @Override
     public void showKvint(){
-        this.kvint = this.kvint + 4;
+        this.kvint = this.mainTone + 4;
         System.out.println("C Kvint on: "+ this.kvint);
     }
     public void showTerts(){
-        this.terts = this.terts + 7;
+        this.terts = this.mainTone + 7;
         System.out.println("C Terts on: " + this.terts);
     }
 }

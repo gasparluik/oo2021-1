@@ -5,7 +5,7 @@ public abstract class Tones {
     public int terts;
     public int mainTone;
 
-    public Tones (int mainTone, int kvint, int terts){
+    public Tones (int mainTone, int terts, int kvint){
         this.kvint = kvint;
         this.terts = terts;
         this. mainTone = mainTone;
