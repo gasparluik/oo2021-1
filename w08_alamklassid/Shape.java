@@ -1,5 +1,3 @@
-import java.io.*;
-import java.lang.Math;
 
 //abstraktne klass kujundi üldmõõtmetega
 abstract class Shape{
