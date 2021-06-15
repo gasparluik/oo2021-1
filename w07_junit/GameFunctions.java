@@ -1,5 +1,5 @@
 
-interface GameFunctions{
+interface Functions{
     public void createGameboard();
     public void printGameBoard();
 }
@@ -10,10 +10,10 @@ public class GameFunctions implements Functions{
         {' ', '|', ' ', '|', ' '},
         {'-', '+', '-', '+', '-'},
         {' ', '|', ' ', '|', ' '},
-        {'-', '+', '- ', '+', '-'},
+        {'-', '+', '-', '+', '-'},
         {' ', '|', ' ', '|', ' '}
     };
-
+    
     public void printGameboard(){
         for(char[] row : gameBoard){
             for(char c : row){
@@ -22,6 +22,18 @@ public class GameFunctions implements Functions{
             System.out.println();
         }
 
+    }
+
+    @Override
+    public void createGameboard() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void printGameBoard() {
+        // TODO Auto-generated method stub
+        
     }
     
 

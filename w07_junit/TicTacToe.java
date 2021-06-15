@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TicTacToe{
+public class TicTacToe extends GameFunctions{
 
     public static void main(String[] args){
 
