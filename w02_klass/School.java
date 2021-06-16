@@ -12,22 +12,23 @@ public class School {
     public static void main(String[] args){
 
 
-        public static void makeStudent(){
 
-            Student aPerson = new Student();
-            aPerson.firstName = "Gaspar";
-            aPerson.lastName = "Luik";
-            aPerson.major = "Informaatika";
-            aPerson.age = 21;
-
-            Student aPerson1 = new Student();
-            aPerson1.firstName = "Meriadoc";
-            aPerson1.lastName = "Took";
-            aPerson1.major = "Hobbitry";
-            aPerson1.age = 30;
-        }
 
         System.out.println(aPerson.lastName);
 
+    }
+    public static void makeStudent(){
+
+        Student aPerson = new Student();
+        aPerson.firstName = "Gaspar";
+        aPerson.lastName = "Luik";
+        aPerson.major = "Informaatika";
+        aPerson.age = 21;
+
+        Student aPerson1 = new Student();
+        aPerson1.firstName = "Meriadoc";
+        aPerson1.lastName = "Took";
+        aPerson1.major = "Hobbitry";
+        aPerson1.age = 30;
     }
 }

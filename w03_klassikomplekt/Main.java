@@ -39,7 +39,7 @@ public class Main {
         String valid = input.nextLine();
 
         for(int i = 0; i < eu.size(); i++){
-            System.out.println(eu.get(i));
+            System.out.println(eu.get(i).getBrand());
         }
 
         //System.out.println(eu.get(Refrigerator : x);

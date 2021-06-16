@@ -6,7 +6,7 @@ public class GTone extends Tones{
     }
     @Override    
     public void showTone(){
-        this.mainTone = this.mainTone + 7;
+        //this.mainTone = this.mainTone + 7;
         System.out.println("G põhitoon on: " + this.mainTone);
     }
     @Override

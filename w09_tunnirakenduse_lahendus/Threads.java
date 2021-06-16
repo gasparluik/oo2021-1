@@ -14,9 +14,9 @@ public void run(){
     try {
         System.out.printf("%s  magab nii palju  %d\n", name, time);
         Thread.sleep(time); //läheb magama, kuni ärkab üles
-        System.out.printf("%s%  is done\n", name); //ärkab üles
+        System.out.printf("%s  is done\n" ,name); //ärkab üles
     } catch (Exception e) {
-        System.out.println("Miski häiris und");
+        System.out.println("Miski häiris und"+ e);
     }
 }
 }

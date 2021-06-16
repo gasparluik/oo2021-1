@@ -9,7 +9,7 @@ public class MyHouse {
         int width = 100;
         int height = 100;
 
-        BufferedImage picture = BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        BufferedImage picture = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         Graphics g = picture.createGraphics();
 
         g.setColor(Color.WHITE);

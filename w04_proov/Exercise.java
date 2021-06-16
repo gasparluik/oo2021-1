@@ -2,20 +2,23 @@
         // ja trükite summa uude faili
 import java.io.FileReader;
 import java.io.BufferedReader;
-import java.io.PrintWrite;
+import java.io.PrintWriter;
+import java.nio.file.Path;
 import java.io.IOException;
 
 public class Exercise {
 
     public static void main(String[] args) throws IOException {
 
+        String file = "exercise.txt";
+
         FileReader fr = new FileReader(file);
         BufferedReader br = new BufferedReader(new FileReader("exercise.txt"));
-        PrintWrite pw = new PRintwrite("out_exercise.txt");
+        PrintWriter pw = new PrintWriter("out_exercise.txt");
 
         String line = br.readLine();
         int sum = 0;
-        while( line != 0){
+        while( line != null){
             sum += Integer.parseInt(line);
             line = br.readLine();
         }
